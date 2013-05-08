@@ -1,0 +1,14 @@
+before_install:
+  - git config --global user.email "bot@travis-ci.org"
+  - git config --global user.name "Travis CI"
+  # Node
+  - npm install grunt-cli -g
+  # Ruby
+  - sudo gem install bundler
+  # Python
+  - sudo easy_install virtualenv
+  - sudo pip install red-start
+language: node_js
+node_js:
+  - "0.10"
+  - "0.9"

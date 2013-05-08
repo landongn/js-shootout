@@ -1,0 +1,44 @@
+{
+	"name": "robyn",
+	"version": "1.3.7-3",
+	"author": "RED Interactive <geeks@ff0000.com>",
+	"description": "RED Interactive's custom Robyn boilerplate",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ff0000/red-boilerplate.git"
+	},
+	"dependencies": {
+		"prompt": "0.1.x",
+		"wrench": "1.3.x",
+		"colors": "0.6.x",
+		"semver": "~1.1.x",
+		"grunt": "~0.3.x"
+	},
+	"devDependencies": {
+		"robyn": ">=1.0.0-beta.3",
+		"mocha": ">=1.6.0",
+		"expect.js": ">=0.2.0",
+		"nexpect": "https://github.com/doctyper/nexpect/tarball/master",
+		"glob-whatev": ">=0.1.8"
+	},
+	"config": {
+		"dirs": {
+			"robyn": ".",
+			"plugins": "plugins",
+			"tasks": "tasks",
+			"plugTmpl": "config/__PLUGIN__"
+		}
+	},
+	"license": "MIT",
+	"optionalDependencies": {},
+	"systemDependencies": {
+		"git": "*",
+		"grunt": "<0.4.x"
+	},
+	"scripts": {
+		"test": "node test/runner.js"
+	},
+	"engines": {
+		"node": ">=0.9"
+	}
+}
